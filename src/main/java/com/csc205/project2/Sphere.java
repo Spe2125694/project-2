@@ -30,12 +30,11 @@ public class Sphere extends Shape{
         return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
     }
 
-    @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Sphere {");
-        sb.append("radius=").append(radius);
-        sb.append(", surface area=").append(surfaceArea());
-        sb.append(", volume=").append(volume());
+        sb.append("radius = ").append(radius);
+        sb.append(", surface area = ").append(surfaceArea());
+        sb.append(", volume = ").append(volume());
         sb.append('}');
         return sb.toString();
     }

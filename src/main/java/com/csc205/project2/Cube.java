@@ -11,17 +11,31 @@ public class Cube extends Shape {
 
     public Cube(double v) {
         super();
-        this.width = 0.0;
-
+        this.width = v;
     }
 
-    @Override
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double v) {
+        width = v;
+    }
+
     public double surfaceArea() {
-        return 0;
+        return Math.pow(width, 2.0) * 6.0;
     }
 
-    @Override
     public double volume() {
-        return 0;
+        return Math.pow(width, 3.0);
+    }
+
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Cube {");
+        sb.append("width = ").append(width);
+        sb.append(", surface area = ").append(surfaceArea());
+        sb.append(", volume = ").append(volume());
+        sb.append('}');
+        return sb.toString();
     }
 }
