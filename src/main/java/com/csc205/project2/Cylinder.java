@@ -25,6 +25,14 @@ public class Cylinder extends Shape {
         this.height = height;
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
     public double surfaceArea() {
         return ((2.0 * Math.PI * height * radius) +
                 (2.0 * Math.PI * (Math.pow(radius, 2.0))));

@@ -35,7 +35,9 @@ public class Project2 {
 
         Cylinder cylinder2 = new Cylinder();
         cylinder2.setHeight(6.0);
+        cylinder2.setRadius(2.0);
         System.out.println("Cylinder 2 Height = " + cylinder2.getHeight());
+        System.out.println("Cylinder 2 Radius = " + cylinder2.getRadius());
 
         Cone cone2 = new Cone();
         cone2.setRadius(8.0);
